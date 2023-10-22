@@ -6,7 +6,7 @@ export default {
     },
     data() {
         return {
-            cases: ["ddd"]
+            cases: ["228", "134", "fdfs"]
         }
     }
 }

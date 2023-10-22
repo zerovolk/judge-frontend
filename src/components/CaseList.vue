@@ -15,11 +15,12 @@ export default {
 
 <template>
     <div class="background">
+        <h2 class="header">Список заявок</h2>
         <div 
         v-if="cases.length > 0"
         class="case-list">
-            <h2 class="__header header">Список заявок</h2>
-            <TransitionGroup name="case-list">
+            
+            <TransitionGroup name="case-list" class="list">
                 <case-item
                 
                 v-for="lawsuit in cases"
@@ -27,27 +28,35 @@ export default {
                 :key="lawsuit"
                 ></case-item>
             </TransitionGroup>
+            
         </div>
         <h2 
         v-else
         class="header">
             Список заявок пуст
         </h2>
+        <div class="right-filter"></div>
     </div>
 </template>
 
 <style lang="scss" scoped>
 
     .background {
-        background: rgba(0,0,0, .1);
+        background: none;
         height: 93.5vh;
-        backdrop-filter: blur(2px);
+        // backdrop-filter: blur(2px);
         padding: 20px;
         color: #fff;
+        display: flex;
+
+        .right-filter {
+            flex: 1;
+        }
     }
     .case-list {
         display: flex;
         flex-direction: column;
+        flex: 3;
         
        .case-list-item {
         display: inline-block;
@@ -67,7 +76,8 @@ export default {
        }
     }
     .header {
-        text-align: center;
+        justify-self:center;
         color: $main-color;
+        flex: 1;
     }
 </style>

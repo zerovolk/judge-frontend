@@ -1,0 +1,8 @@
+@mixin allInputsStyle {
+    .text {
+        padding: 6px 5px;
+        border: 2px solid $main-color;
+        box-shadow: 0 0 15px 4px rgba(0,0,0,0.15);
+        font-size: 18px;
+    }
+}

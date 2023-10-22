@@ -13,16 +13,17 @@ export default {
 <style scoped lang="scss">
 .btn {
     padding: 10px 15px;
-    background: $element-color;
-    color: black;
-    border: 1px solid black;
+    background: $main-color;
+    color: $element-color;
+    border: 2px solid $element-color;
     transition: background 600ms ease;
     cursor: pointer;
 
 
     &:hover {
-    background: none;
-    color: $element-color;
+    background: $element-color;
+    color: $main-color;
+    border: 2px solid $main-color;
 }
 }
 </style>

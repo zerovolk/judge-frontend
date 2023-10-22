@@ -18,14 +18,15 @@ export default {
 
 <style lang="scss">
     .case {
-        padding: 15px;
+        padding: 11px;
         border: 2px solid $main-color;
         margin-top: 15px;
         display: flex;
         /* align-self: center; */
         justify-content: space-between;
-        background: rgba(0,0,0, .2);
-        backdrop-filter: blur(3px);
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(4px);
+        cursor: pointer;
 
         .__lawsuit {
             flex: 1;
